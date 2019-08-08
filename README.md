@@ -35,7 +35,7 @@ Rename `config.example.py` and add your discord bot key (and optionally your CSE
 ```
 $ mv config.example.py config.py
 $ nano config.py
-...
+
 BOT_KEY="YOUR BOT KEY"
 ```
 Finally, start the bot:
