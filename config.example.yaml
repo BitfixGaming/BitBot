@@ -6,8 +6,7 @@ bot:
   extensions: [
     "cogs.dice",
     "cogs.currency",
-    "cogs.echo",
-    "cogs.stats"    ]
+    "cogs.echo"    ]
 
 currency:
   api_key: ""
