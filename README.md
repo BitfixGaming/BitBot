@@ -1,10 +1,13 @@
 
 # BitBot
 
-A bot for the Bitfix Gaming discord, based on DMG-Bot
+A bot for the [Bitfix Gaming discord](http://discord.gg/jCXTBn9), [based on DMG-Bot](https://github.com/RGameBoy/DMG-Bot)
 
 * Dice roller
 * Currency converter (using http://currencyconverterapi.com)
+* Game of the day from https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best
+* Echoing messages to channels
+* Reaction based rank assignment
 
 ## Getting Started
 
@@ -12,11 +15,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Things you need and how to install them
 
-```
-Python 3.6 (3.7 does not work)
-```
+* Python 3.6 or above
 
 ### Installing
 
@@ -31,10 +32,10 @@ Install the required python packages with pip.
 ```
 $ pip install -r requirements.txt
 ```
-Rename `config.example.py` and add your discord bot key (and optionally your CSE keys) to it.
+Rename `config.example.yaml` and add your discord bot key (and optionally your CSE keys) to it.
 ```
-$ mv config.example.py config.py
-$ nano config.py
+$ mv config.example.yaml config.yaml
+$ nano config.yaml
 
 BOT_KEY="YOUR BOT KEY"
 ```
