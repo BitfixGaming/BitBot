@@ -11,8 +11,6 @@ if __name__ == "__main__":
     @bot.event
     async def on_ready():
         print('Connected!')
-        print(f'Username: {bot.user.name}')
-        print(f'ID: {bot.user.id}')
         await bot.change_presence(activity=Game(name="GGWP"))
 
     for extension in extensions:
