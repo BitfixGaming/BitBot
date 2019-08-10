@@ -3,10 +3,12 @@ bot:
   discord_key: ""
   command_prefix: ["!"]
   admin_minimum_role: "" #The lowest role that can use higher administrative functions, specify the exact name.
+  rank_channel_id: "" #The channel id for the rank management channel
   extensions: [
     "cogs.dice",
     "cogs.currency",
-    "cogs.echo"    ]
+    "cogs.echo",
+    "cogs.reactionranker" ]
 
 currency:
   api_key: ""

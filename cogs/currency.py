@@ -2,6 +2,7 @@ import aiohttp
 from discord.ext import commands
 from config import get_section
 
+
 class CurrencyConverter(commands.Cog):
     """Provides currency conversion functions."""
     
@@ -13,12 +14,10 @@ class CurrencyConverter(commands.Cog):
         if not self.api_key:
             raise Exception("Key 'api_key' not found or not set. To use this cog, get a key from https://www.currencyconverterapi.com/")
 
-
     @commands.command(aliases=["currency", "cc", "cv"])
     async def convert(self, ctx, amount: float, from_currency: str, to_currency: str):
         """Converts currency."""
 
-        # disgusting hack because async fails inside the constructor
         if not self.currencies:
             self.currencies = await self.get_currencies()
 
@@ -83,6 +82,7 @@ class CurrencyConverter(commands.Cog):
                     return js["results"]
                 else:
                     return None
+
 
 def setup(bot):
     bot.add_cog(CurrencyConverter(bot))
