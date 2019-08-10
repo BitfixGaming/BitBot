@@ -9,6 +9,8 @@ bot:
     "cogs.currency",
     "cogs.echo",
     "cogs.reactionranker" ]
+  ranks:
+    EmojiID: "RankID" #Adds a user to the specified rank when they add an emoji with a matching id in the channel specified by rank_channel_id
 
 currency:
   api_key: ""
