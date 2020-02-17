@@ -14,3 +14,16 @@ bot:
 
 currency:
   api_key: ""
+
+managedroles:
+  000000000000000001: #This role can give any role under it
+    - "000000000000000011" #Example role id
+    - "000000000000000012" #Example role id
+    - "000000000000000013" #Example role id
+    - "000000000000000014" #Example role id
+  000000000000000002: #This role can give any role under it
+    - "000000000000000021" #Example role id
+    - "000000000000000022" #Example role id
+    - "000000000000000023" #Example role id
+  000000000000000003: #This role can give any role under it
+    - "000000000000000031" #Example role id
