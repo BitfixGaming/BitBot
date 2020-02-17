@@ -21,7 +21,7 @@ class Rolemanager(commands.Cog):
                         await ctx.send("⚠ " + member.display_name + " already has " + rolename.name)
                         break
                     else:
-                        await ctx.send("Added " + rolename.name + " to " + member.display_name)
+                        await ctx.send("Added " + member.display_name + " to " + rolename.name)
                         await member.add_roles(rolename)
                         break
             else:
@@ -41,7 +41,7 @@ class Rolemanager(commands.Cog):
                 if str(rolename.id) in get_section("managedroles").get(sectionRole.id):
                     if rolename in member.roles:
                         await member.remove_roles(rolename)
-                        await ctx.send("Removed " + rolename.name + " from " + member.display_name)
+                        await ctx.send("Removed " + member.display_name + " from " + rolename.name)
                         break
                     else:
                         await ctx.send("⚠ " + member.display_name + " does not have " + rolename.name)
