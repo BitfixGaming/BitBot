@@ -1,6 +1,5 @@
 psutil
-discord
-aiohttp==3.4.4
+discord.py
 async-timeout==3.0.1
 attrs==18.2.0
 beautifulsoup4==4.6.3
